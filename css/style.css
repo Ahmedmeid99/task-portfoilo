@@ -31,13 +31,18 @@ a {
 }
 .img-container {
   width: 200px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
   padding: 10px;
   background: #fff;
   flex: 1;
 }
-.img-container > img {
+.img-container .img {
+  background-image: url("../imgs/ahmed02.jpg");
+  background-size: cover;
+  background-position: center right;
+  height: 100%;
   width: 100%;
   border-radius: 50%;
   display: block;
@@ -109,6 +114,9 @@ a {
   }
   .flex {
     flex-direction: column;
+  }
+  .img-container .img {
+    height: 180px;
   }
 }
 /* ///////////////////////// */
