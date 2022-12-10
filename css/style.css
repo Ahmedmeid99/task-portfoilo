@@ -3,9 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* html{
-
-} */
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -20,7 +20,6 @@ a{
   color: inherit;
     text-decoration: none;
 }
-a
 .app {
   padding: 60px 0;
   background-color: #f0f0f0;
@@ -121,6 +120,7 @@ a
     border: 1px solid #ccc;
   box-shadow:2px 1px 5px -1px rgb(0 0 0 / 15%);
   padding: 40px 0;
+  border-color: #ccc transparent #ccc
 }
 .section-title{
   font-size: 35px;
@@ -137,7 +137,13 @@ a
   align-items:center;
   gap: 30px;
 }
+.eductation{
+  flex: 1;
+}
+.experience{
+  flex: 1;
 
+}
 @media (max-width: 800px) {
   .about_content{
     flex-direction: column;
@@ -206,4 +212,51 @@ a
     font-size: 16px;
     color: #444;
     margin-bottom: 30px;
+}
+/* /////// */
+.skills{
+  padding: 30px 0;
+    border-bottom: 1px solid #cccc;
+}
+.skills .object_title{
+  margin: 20px ;
+}
+.skills-content{
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.skills-content span{
+  display:black;
+}
+.skills-content .box{
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex:1;
+    border:none;
+}
+.skills-content .box >span{
+  width: fit-content;
+  border: 1px solid #ccc;
+  padding: 0px 10px;
+  border-radius: 20px;
+
+}
+/* ////////// */
+.footer{
+  background:#f1f3f4;
+}
+.footer >div{
+  display: flex;
+    font-size: 30px;
+    gap: 30px;
+    width: fit-content;
+    color: #333;
+    padding-bottom: 50px;
+    transition:.5s;
+}
+.footer .icon:hover {
+  color:#147ac6;
 }
